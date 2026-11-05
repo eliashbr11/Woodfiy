@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Woodfiy – Premium-Möbel & individuelle Möbelplanung</title>
+  <meta name="description" content="Woodfiy: hochwertige Holzmöbel entdecken oder nach eigenen Vorstellungen planen lassen – Kleiderschränke, Kommoden, Regale, Sideboards, Schreibtische und TV-Möbel.">
+  <meta name="theme-color" content="#faf6ef">
+  <meta property="og:title" content="Woodfiy – Möbel nach deinen Vorstellungen">
+  <meta property="og:description" content="Premium-Möbelshop und individuelle Möbelplanung aus Holz.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"Woodfiy","description":"Premium-Möbel aus Holz und individuelle Möbelplanung"}
+  </script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo" aria-label="Woodfiy Startseite">Wood<span>fiy</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+      <a href="#kategorien">Möbel</a>
+      <a href="#massanfertigung">Individuelle Planung</a>
+      <a href="#ueber-uns">Über uns</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="#massanfertigung" class="btn btn--primary">Möbel planen</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container">
+      <p class="eyebrow">Willkommen bei Woodfiy</p>
+      <h1 id="hero-title">Möbel aus Holz.<br>Nach deinen Vorstellungen.</h1>
+      <p>Entdecke hochwertige Möbel in unserem Shop – oder plane dein Möbelstück ganz individuell. Wir machen daraus einen professionellen Plan.</p>
+      <div class="btn-row">
+        <a href="#kategorien" class="btn btn--primary">Möbel entdecken</a>
+        <a href="#massanfertigung" class="btn btn--ghost">Möbel individuell planen</a>
+      </div>
+    </div>
+    <span class="placeholder-note">Platzhalter-Titelbild – später durch Foto ersetzen</span>
+  </section>
+
+  <!-- Kategorien -->
+  <section class="section" id="kategorien" aria-labelledby="kat-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Unser Sortiment</p>
+        <h2 id="kat-title">Unsere Möbelkategorien</h2>
+        <p class="lead">Von Kleiderschrank bis Schreibtisch – Möbel, die Holz in den Mittelpunkt stellen.</p>
+      </div>
+      <div class="grid grid--cats reveal" id="category-grid">
+        <!-- wird aus js/data.js befüllt; Fallback für Suchmaschinen/ohne JS: -->
+        <noscript>
+          <a class="cat-card" href="#kategorien" style="--c1:#8a5d3b;--c2:#7a4f31"><h3>Kleiderschränke</h3></a>
+          <a class="cat-card" href="#kategorien" style="--c1:#a67c52;--c2:#96693f"><h3>Kommoden</h3></a>
+          <a class="cat-card" href="#kategorien" style="--c1:#b8946a;--c2:#a98258"><h3>Regale</h3></a>
+          <a class="cat-card" href="#kategorien" style="--c1:#7a5233;--c2:#6b452a"><h3>Sideboards</h3></a>
+          <a class="cat-card" href="#kategorien" style="--c1:#c4a47c;--c2:#b4936b"><h3>Schreibtische</h3></a>
+          <a class="cat-card" href="#kategorien" style="--c1:#5f4029;--c2:#523622"><h3>TV-Möbel</h3></a>
+          <a class="cat-card" href="#massanfertigung" style="--c1:#d0b08a;--c2:#c2a07a"><h3>Individuelle Möbel</h3></a>
+        </noscript>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beliebt -->
+  <section class="section section--beige" aria-labelledby="pop-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Favoriten</p>
+        <h2 id="pop-title">Beliebte Möbel</h2>
+      </div>
+      <div class="grid grid--products reveal" id="popular-grid"></div>
+    </div>
+  </section>
+
+  <!-- Neuheiten -->
+  <section class="section" aria-labelledby="new-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Frisch im Sortiment</p>
+        <h2 id="new-title">Neuheiten</h2>
+      </div>
+      <div class="grid grid--products reveal" id="new-grid"></div>
+      <p class="form-note" style="margin-top:1rem">Hinweis: Beispiel-Produkte als Platzhalter. Echte Produkte, Preise und Bilder folgen mit Phase 2 (Möbelkatalog).</p>
+    </div>
+  </section>
+
+  <!-- Vorteile -->
+  <section class="section section--beige" aria-labelledby="ben-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Warum Woodfiy</p>
+        <h2 id="ben-title">Vorteile von Woodfiy</h2>
+      </div>
+      <div class="grid grid--benefits reveal">
+        <div class="benefit"><div class="icon" aria-hidden="true">🪵</div><h3>Hochwertige Materialien</h3><p>Echtes Holz und sorgfältig gewählte Materialien für Möbel mit Charakter.</p></div>
+        <div class="benefit"><div class="icon" aria-hidden="true">📐</div><h3>Präzise Planung</h3><p>Jedes Möbelstück wird technisch sauber geplant – mit Maßen und Einzelteilen.</p></div>
+        <div class="benefit"><div class="icon" aria-hidden="true">✏️</div><h3>Individuelle Wünsche</h3><p>Maße, Holzart, Farbe, Türen und Schubladen bestimmst du selbst.</p></div>
+        <div class="benefit"><div class="icon" aria-hidden="true">🔨</div><h3>Handwerkliche Qualität</h3><p>Moderne Möbelkonzepte, die auf solides Handwerk bauen.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Maßanfertigung -->
+  <section class="section" id="massanfertigung" aria-labelledby="custom-title">
+    <div class="container split">
+      <div class="reveal">
+        <p class="eyebrow">Individuelle Maßanfertigung</p>
+        <h2 id="custom-title">Dein Möbel. Dein Plan.</h2>
+        <p class="lead">Nichts Passendes im Shop gefunden? Beschreibe uns dein Wunschmöbel – wir prüfen deine Anfrage und erstellen einen professionellen Möbelplan.</p>
+        <ol class="steps">
+          <li>Inspirationsbild hochladen und Möbelart wählen</li>
+          <li>Maße, Holzart, Farbe und Oberfläche festlegen</li>
+          <li>Wir prüfen die Anfrage und erstellen den Plan als PDF</li>
+          <li>Erst danach folgt ein verbindliches Angebot</li>
+        </ol>
+        <a href="#kontakt" class="btn btn--dark">Möbel individuell planen</a>
+        <p class="form-note" style="margin-top:.8rem">Der komplette Planungsbereich mit Bild-Upload folgt in Phase 2.</p>
+      </div>
+      <div class="visual-block reveal" role="img" aria-label="Platzhalter für Planungsbild">Platzhalter – hier erscheint später eine Planungs-Visualisierung</div>
+    </div>
+  </section>
+
+  <!-- Über uns -->
+  <section class="section section--dark" id="ueber-uns" aria-labelledby="about-title">
+    <div class="container split">
+      <div class="reveal">
+        <p class="eyebrow">Über Woodfiy</p>
+        <h2 id="about-title">Handwerk trifft moderne Gestaltung</h2>
+        <p class="lead">Woodfiy steht für individuelle Möbel, kreative Gestaltung, präzise Planung, hochwertige Materialien und moderne Möbelkonzepte. Im Mittelpunkt stehen handwerkliche Qualität und die Möglichkeit, Möbel genau nach den eigenen Vorstellungen gestalten zu lassen.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inspirationen -->
+  <section class="section" aria-labelledby="inspo-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Ideen</p>
+        <h2 id="inspo-title">Kundeninspirationen</h2>
+        <p class="lead">Hier zeigen wir später echte Projekte unserer Kunden.</p>
+      </div>
+      <div class="grid grid--inspo reveal">
+        <div class="inspo" style="--c1:#8a5d3b;--c2:#7a4f31">Platzhalter · Wohnzimmer</div>
+        <div class="inspo" style="--c1:#b8946a;--c2:#a98258;--angle:0deg">Platzhalter · Arbeitszimmer</div>
+        <div class="inspo" style="--c1:#6b452a;--c2:#5a3a23">Platzhalter · Schlafzimmer</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section class="section section--beige" id="kontakt" aria-labelledby="contact-title">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <p class="eyebrow">Kontakt</p>
+        <h2 id="contact-title">Schreib uns</h2>
+        <p class="lead">Fragen zu Möbeln oder einer individuellen Planung? Wir melden uns bei dir.</p>
+        <p class="form-note">E-Mail: [PLATZHALTER – E-Mail-Adresse eintragen]<br>Telefon: [PLATZHALTER]<br>Adresse: [PLATZHALTER]</p>
+      </div>
+      <form class="form reveal" id="contact-form" novalidate>
+        <div class="field"><label for="c-name">Name</label><input id="c-name" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="c-mail">E-Mail</label><input id="c-mail" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="c-msg">Nachricht</label><textarea id="c-msg" name="message" rows="5" required></textarea></div>
+        <button class="btn btn--primary" type="submit">Nachricht vorbereiten</button>
+        <p class="form-note" id="form-status" role="status" style="margin-top:.8rem">
+          Noch ohne Server: Der Button öffnet dein E-Mail-Programm. Der echte Versand (z. B. über einen kostenlosen Formular-Dienst) wird in Phase 2 eingerichtet.
+        </p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo" style="color:var(--cream)">Wood<span>fiy</span></a>
+        <p style="margin-top:.8rem">Premium-Möbel aus Holz – entdecken, planen, individuell gestalten.</p>
+      </div>
+      <div>
+        <h3>Möbel</h3>
+        <ul id="footer-cats"></ul>
+      </div>
+      <div>
+        <h3>Woodfiy</h3>
+        <ul>
+          <li><a href="#ueber-uns">Über uns</a></li>
+          <li><a href="#massanfertigung">Individuelle Planung</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Rechtliches</h3>
+        <ul>
+          <li><a href="pages/impressum.html">Impressum</a></li>
+          <li><a href="pages/datenschutz.html">Datenschutz</a></li>
+          <li><a href="pages/agb.html">AGB</a></li>
+          <li><a href="pages/widerruf.html">Widerrufsbelehrung</a></li>
+          <li><a href="pages/versand.html">Versand &amp; Lieferung</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year">2026</span> Woodfiy · Alle Rechte vorbehalten</div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
